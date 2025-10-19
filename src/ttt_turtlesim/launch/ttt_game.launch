@@ -1,0 +1,16 @@
+<launch>
+  <!-- Start turtlesim -->
+  <node name="turtlesim_node" pkg="turtlesim" type="turtlesim_node" output="screen">
+    <param name="background_r" value="200" />
+    <param name="background_g" value="200" />
+    <param name="background_b" value="200" />
+  </node>
+  
+  <!-- Game Manager Node -->
+  <node name="game_manager" pkg="ttt_turtlesim" type="game_manager.py" output="screen" />
+  <!-- Move Executor Node -->
+  <node name="move_executor" pkg="ttt_turtlesim" type="move_executor.py" output="screen" />
+  <!-- Game Client Node -->
+  <node name="game_client" pkg="ttt_turtlesim" type="game_client.py" output="screen" />
+
+</launch>

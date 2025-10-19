@@ -1,0 +1,7 @@
+---
+# Response
+string[9] board_state      # Current board state as array [0-8] representing 3x3 grid
+bool game_over             # Whether the game is over
+string winner              # Winner ('X', 'O', or empty string for draw/no winner yet)
+string current_player      # Current player ('X' or 'O', empty if game over)
+string error_message       # Error message if any

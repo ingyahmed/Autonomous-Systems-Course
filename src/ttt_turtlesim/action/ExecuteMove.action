@@ -1,0 +1,14 @@
+# Goal
+int32 row               # Row index (0-2)
+int32 col               # Column index (0-2)
+string player_symbol    # Player symbol: "X" or "O"
+
+---
+# Result
+bool success            # Whether the move was executed successfully
+string error_message    # Error message if move failed
+
+---
+# Feedback
+float32 progress        # Progress of the move execution (0.0 to 1.0)
+string status           # Current status of the move execution

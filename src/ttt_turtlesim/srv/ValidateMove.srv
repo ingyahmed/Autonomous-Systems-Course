@@ -1,0 +1,10 @@
+# Request
+int32 row      # Row index (0-2)
+int32 col      # Column index (0-2)
+string player_symbol  # Player symbol: "X" or "O"
+
+---
+# Response
+bool is_valid           # Whether the move is valid
+string error_message    # Error message if move is invalid
+string[9] board_state   # Current board state as array [0-8] representing 3x3 grid
